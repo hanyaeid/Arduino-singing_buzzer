@@ -23,7 +23,7 @@ void loop() {
     else{
       tone(buzzer,i);                         
       int noteDuration = duration[i];
-      delay(noteDuration);    //this will hold out the note for 1s
+      delay(noteDuration);    
     }
   }
 }
