@@ -6,13 +6,13 @@ int i=0;
 const int buzzer = 8; //defining the buzzer as pin 8
 
 void setup() {
-  // put your setup code here, to run once:
+ 
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  for (i; i<notesLength; i++) {             //says that for the variable i, as long as i is less than the length of the notes array, increment 1 to i as you loop
+  
+  for (i; i<notesLength; i++) {            
     if (i == notesLength -1) {
       tone(buzzer,i);
       int noteDuration = duration[i];
@@ -21,7 +21,7 @@ void loop() {
     }
 
     else{
-      tone(buzzer,i);                         //for each i the loop goes through, play the buzzer tone of that i
+      tone(buzzer,i);                         
       int noteDuration = duration[i];
       delay(noteDuration);    //this will hold out the note for 1s
     }
